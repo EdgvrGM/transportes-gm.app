@@ -1,20 +1,4 @@
-# Base44 App
+# Transportes GM webapp
 
-
-This app was created automatically by Base44.
-It's a Vite+React app that communicates with the Base44 API.
-
-## Running the app
-
-```bash
-npm install
-npm run dev
-```
-
-## Building the app
-
-```bash
-npm run build
-```
-
-For more information and support, please contact Base44 support at app@base44.com.
+Landing page para mi empresa de transporte de carga,
+con un sistema de control de combustible integrado.
