@@ -62,8 +62,25 @@ export default function Layout({ children, currentPageName }) {
   return (
     <div className="min-h-screen flex bg-gradient-to-br from-slate-50 to-slate-100">
       <aside className="hidden md:flex md:flex-col w-64 bg-white border-r border-slate-200 fixed h-screen">
-        {/* ... (Header del Sidebar se mantiene igual) ... */}
-        <div className="border-b border-slate-200 p-6">...</div>
+        <div className="border-b border-slate-200 p-6">
+          <div className="flex flex-col items-center gap-2">
+            {/* Logo */}
+            <img
+              src="/img/LOGO.PNG"
+              alt="Logo de Transportes GM"
+              className="h-12 w-auto"
+            />
+            {/* Títulos */}
+            <div>
+              <h2 className="text-xl font-bold text-center text-slate-800">
+                Transportes GM
+              </h2>
+              <p className="text-sm text-center text-slate-500">
+                Gestión de Combustible
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="flex-1 p-3 overflow-y-auto">
           <nav className="space-y-1">

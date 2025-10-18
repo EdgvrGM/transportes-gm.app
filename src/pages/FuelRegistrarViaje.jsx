@@ -351,7 +351,10 @@ export default function FuelRegistrarViaje() {
                       </SelectTrigger>
                       <SelectContent>
                         {conductores.map((conductor) => (
-                          <SelectItem key={conductor.id} value={conductor.id}>
+                          <SelectItem
+                            key={conductor.id}
+                            value={String(conductor.id)}
+                          >
                             {conductor.nombre}
                           </SelectItem>
                         ))}
@@ -445,7 +448,7 @@ export default function FuelRegistrarViaje() {
                       </SelectTrigger>
                       <SelectContent>
                         {camiones.map((camion) => (
-                          <SelectItem key={camion.id} value={camion.id}>
+                          <SelectItem key={camion.id} value={String(camion.id)}>
                             {camion.nombre} - {camion.placas}
                           </SelectItem>
                         ))}
